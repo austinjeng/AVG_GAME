@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.android.gms:play-services-ads:18.3.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9fbaf16258bc9005a8b15c9166dda0d3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9fbaf16258bc9005a8b15c9166dda0d3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9d29298f597682d2b436fc6d2fdd9d8e/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9d29298f597682d2b436fc6d2fdd9d8e/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9d29298f597682d2b436fc6d2fdd9d8e/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/071a8e460ebab5e4832ff3f92fedfbd6/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/071a8e460ebab5e4832ff3f92fedfbd6/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/071a8e460ebab5e4832ff3f92fedfbd6/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/240c2b4cd9d8f572b50e2543353c93e4/transformed/jetified-play-services-ads-18.3.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/240c2b4cd9d8f572b50e2543353c93e4/transformed/jetified-play-services-ads-18.3.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/240c2b4cd9d8f572b50e2543353c93e4/transformed/jetified-play-services-ads-18.3.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.gms/play-services-ads/18.3.0/7b2b904a57fae0b77a9d2faf5284e6788f3223ba/play-services-ads-18.3.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

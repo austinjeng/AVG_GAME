@@ -1,0 +1,84 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    compileSdkVersion 31
+    defaultConfig {
+        applicationId "tw.edu.scu.avgexample"
+        minSdkVersion 21
+        targetSdkVersion 31
+        versionCode 9
+        versionName "1.0.2"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        debug {
+            debuggable true
+        }
+        release {
+            debuggable false
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+    sourceSets {
+        main {
+            res.srcDirs =
+                    [
+                            'src/main/res',
+                            'src/main/res/kw_framework/material/background',
+                            'src/main/res/kw_framework/material/bgm',
+                            'src/main/res/kw_framework/material/character/default',
+                            'src/main/res/kw_framework/material/character/male_001',
+                            'src/main/res/kw_framework/material/character/male_002',
+                            'src/main/res/kw_framework/material/character/male_003',
+                            'src/main/res/kw_framework/material/character/male_004',
+                            'src/main/res/kw_framework/material/character/male_005',
+                            'src/main/res/kw_framework/material/character/female_001',
+                            'src/main/res/kw_framework/material/character/female_002',
+                            'src/main/res/kw_framework/material/character/female_003',
+                            'src/main/res/kw_framework/material/character/female_004',
+                            'src/main/res/kw_framework/material/character/female_005',
+                            'src/main/res/kw_framework/material/character/female_006',
+                            'src/main/res/kw_framework/material/dialog',
+                            'src/main/res/kw_framework/material/global',
+                            'src/main/res/kw_framework/material/menu',
+                            'src/main/res/kw_framework/material/picture',
+                            'src/main/res/kw_framework/material/sound',
+                            'src/main/res/kw_framework'
+                    ]
+        }
+    }
+
+    productFlavors {
+        dev {
+            applicationId = "com.kawastudio.edu.scu.avgexample.dev"
+            buildConfigField "String", "ENV", "\"dev\""
+            resValue 'string', 'ad_view_id_01', 'ca-app-pub-3940256099942544/6300978111'
+            resValue 'string', 'rewarded_video_ad_01', 'ca-app-pub-3940256099942544/5224354917'
+        }
+        product {
+            applicationId = "com.kawastudio.edu.scu.avgexample"
+            buildConfigField "String", "ENV", "\"product\"";
+            resValue 'string', 'ad_view_id_01', 'ca-app-pub-3940256099942544/6300978111'
+            resValue 'string', 'rewarded_video_ad_01', 'ca-app-pub-3940256099942544/5224354917'
+        }
+    }
+
+    flavorDimensions "default"
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.google.android.material:material:1.5.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.16'
+    implementation 'com.google.android.gms:play-services-ads:18.3.0'
+}

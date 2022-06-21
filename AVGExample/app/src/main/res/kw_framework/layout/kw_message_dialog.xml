@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/dialogMessageFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:alpha="0.95"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/kw_message_dialog_background" />
+
+        <tw.edu.scu.avgexample.framework.library.KWTypewriterTextView
+            android:id="@+id/dialogMessageTextView"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:padding="25dp"
+            android:text="訊息文字"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/dialogHintIGifmageView"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="45dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/kw_message_dialog_hint_arrow"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/dialogNameFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/kw_message_dialog_name_background" />
+
+        <TextView
+            android:id="@+id/dialogNameTextView"
+            android:layout_width="160dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="角色姓名"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+</FrameLayout>

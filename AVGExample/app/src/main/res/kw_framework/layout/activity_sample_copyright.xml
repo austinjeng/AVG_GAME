@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sample.SampleCopyrightActivity">
+
+    <FrameLayout
+        android:id="@+id/containerFrameLayout"
+        android:layout_width="540dp"
+        android:layout_height="960dp"
+        android:background="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="18sp"
+                android:text="此App為套用AVG專案模版完成後的成果，僅供授課教學展示使用，不做任何商業用途。\n\nApp中使用的素材，扣除部分自製素材外，皆是來自於網路上蒐集來的免費素材，如果有不小心侵犯到著作權的話，請立即來信告知。"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center"
+                android:layout_margin="50dp"
+                android:paddingBottom="20dp"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/copyrightLinearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
