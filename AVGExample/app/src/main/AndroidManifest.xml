@@ -17,7 +17,7 @@
             android:name=".LeaveGameActivity"
             android:exported="false" />
         <activity
-            android:name=".MainMenuActivity"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".EndAndReplayActivity"
@@ -49,7 +49,7 @@
             android:value="ca-app-pub-9964618295477835~2689386481" />
 
         <activity
-            android:name=".MainActivity"
+            android:name=".MainMenuActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
