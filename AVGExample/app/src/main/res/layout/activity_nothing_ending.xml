@@ -18,6 +18,22 @@
             android:layout_height="match_parent"
             android:background="#AF000000">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/buttonReplay"
+                    android:layout_width="196dp"
+                    android:layout_height="87dp"
+                    android:layout_marginLeft="165dp"
+                    android:layout_marginTop="800dp"
+                    android:background="@drawable/button_reselect_suspect"
+                    android:visibility="visible" />/>
+
+            </LinearLayout>
+
         </FrameLayout>
     </FrameLayout>
 

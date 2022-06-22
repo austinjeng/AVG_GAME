@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 Intent intent = new Intent();
-                intent.setClass(MainActivity.this, MyScene1Activity.class);
+                intent.setClass(MainActivity.this, MyScene2Activity.class);
                 startActivity(intent);
             }
         });

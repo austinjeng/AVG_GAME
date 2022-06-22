@@ -58,7 +58,8 @@ public class MyScene1Activity extends KWBaseSceneActivity {
         KWThirdPersonEventModel event5 = new KWThirdPersonEventModel(conan_character, "哈囉~ 我是高中生偵探工藤新一!");
         KWFirstPersonEventModel event6 = new KWFirstPersonEventModel("(哇! 本人比電視上還帥呢...)");
         KWFirstPersonEventModel event7 = new KWFirstPersonEventModel("我","你好, 我是第一天來的新人, 請多多指教!");
-        KWThirdPersonEventModel event8 = new KWThirdPersonEventModel(conan_character, "呃... 我不是這裡的員工拉! 話說...");
+        KWThirdPersonEventModel event8 = new KWThirdPersonEventModel(conan_character, "呃... 我不是這裡的員工拉! 話說...")
+                .setSouncEffectResouceId(R.raw.kw_sound_male_03);
         KWThirdPersonEventModel event9 = new KWThirdPersonEventModel(conan_character, "你也想當偵探嗎?");
         KWThirdPersonEventModel event10 = new KWThirdPersonEventModel(conan_character, "hmm... 當偵探可不是那麼容易呢!");
         KWThirdPersonEventModel event11 = new KWThirdPersonEventModel(conan_character, "首先要和我一樣又聰明又帥...");
@@ -72,14 +73,16 @@ public class MyScene1Activity extends KWBaseSceneActivity {
         KWThirdPersonEventModel event14 = new KWThirdPersonEventModel(maori_character, "我放在冰箱裡的披薩不見啦!");
         event14.setCharacterPosition(KWEventModel.KW_EVENT_CHARACTER_POSITION_RIGHT);
         KWThirdPersonEventModel event15 = new KWThirdPersonEventModel(maori_character, "欸? 你是...今天要來的新人嗎?");
-        KWFirstPersonEventModel event16 = new KWFirstPersonEventModel("我","沒錯!");
+        KWFirstPersonEventModel event16 = new KWFirstPersonEventModel("我","沒錯!")
+                .setSouncEffectResouceId(R.raw.kw_sound_male_01);
         KWThirdPersonEventModel event17 = new KWThirdPersonEventModel(maori_character, "既然這樣, 你的第一個任務, 去幫我找出誰偷了我的披薩吧!");
         KWThirdPersonEventModel event18 = new KWThirdPersonEventModel(maori_character, "新一, 你也去幫他吧!");
         KWThirdPersonEventModel event19 = new KWThirdPersonEventModel(conan_character, "這種程度是低估我了吧!");
         event19.setCharacterFacing(KWEventModel.KW_EVENT_CHARACTER_FACING_LEFT);
         KWThirdPersonEventModel event20 = new KWThirdPersonEventModel(conan_character, "其實我已經鎖定3個嫌疑人, 你去調查看看。");
         event20.setCharacterFacing(KWEventModel.KW_EVENT_CHARACTER_FACING_LEFT);
-        KWFirstPersonEventModel event21 = new KWFirstPersonEventModel("我","沒問題!");
+        KWFirstPersonEventModel event21 = new KWFirstPersonEventModel("我","沒問題!")
+                .setSouncEffectResouceId(R.raw.kw_sound_male_02);
 
         //隱藏角色圖片
         KWThirdPersonEventModel event22 = new KWThirdPersonEventModel(maori_character).setCharacterImageVisibility(false);
@@ -293,10 +296,9 @@ public class MyScene1Activity extends KWBaseSceneActivity {
 
         //怪盜基德
         KWCharacterModel thief_character = new KWCharacterModel(this,"thief", "怪盜基德");
-
         KWCharacterModel maori_character = new KWCharacterModel(this,"maori", "毛利小五郎");
         KWThirdPersonEventModel eventBGM = new KWThirdPersonEventModel(maori_character).setCharacterImageVisibility(false)
-                .setBackgroundMusicResouceId(R.raw.kw_bgm_good_end);
+                .setBackgroundMusicResouceId(R.raw.kw_bgm_kid_theme);
 
         if (isOptionSelected[1])
         {
@@ -332,7 +334,8 @@ public class MyScene1Activity extends KWBaseSceneActivity {
             KWThirdPersonEventModel event10 = new KWThirdPersonEventModel(thief_character, "今天可是要準備上演一場精采的竊盜大秀呢!");
             KWThirdPersonEventModel event11 = new KWThirdPersonEventModel(thief_character).setCharacterImageVisibility(false);
             KWFirstPersonEventModel event12 = new KWFirstPersonEventModel("我","那怪盜先生, 可以幫我簽...");
-            KWFirstPersonEventModel event13 = new KWFirstPersonEventModel("(啊... 已經消失了啊!)");
+            KWFirstPersonEventModel event13 = new KWFirstPersonEventModel("(啊... 已經消失了啊!)")
+                    .setSouncEffectResouceId(R.raw.kw_sound_male_03);
 
             event1.setBackgroundDrawable(moon_background);
 
@@ -375,7 +378,7 @@ public class MyScene1Activity extends KWBaseSceneActivity {
             KWThirdPersonEventModel event1 = new KWThirdPersonEventModel(gin_character, "不是叫你閃邊去嗎!")
                     .setBackgroundMusicResouceId(R.raw.kw_bgm_weird);
             KWThirdPersonEventModel event2 = new KWThirdPersonEventModel(gin_character, "找死嗎!");
-            KWFirstPersonEventModel event3 = new KWFirstPersonEventModel("對...對..對不起!!!!");
+            KWFirstPersonEventModel event3 = new KWFirstPersonEventModel("我","對...對..對不起!!!!");
             event1.setCharacterPosition(KWEventModel.KW_EVENT_CHARACTER_POSITION_CENTER);
             KWThirdPersonEventModel event4 = new KWThirdPersonEventModel(gin_character).setCharacterImageVisibility(false);
 

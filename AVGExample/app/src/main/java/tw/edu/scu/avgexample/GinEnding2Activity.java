@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import tw.edu.scu.avgexample.framework.KWBaseSceneActivity;
 import tw.edu.scu.avgexample.framework.model.KWFullScreenEventModel;
@@ -21,7 +23,18 @@ public class GinEnding2Activity extends KWBaseSceneActivity {
     protected void initializeEvent () {
         super.initializeEvent();
 
+        Button replayButton = findViewById(R.id.buttonReplay);
+
+        replayButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                switchSceneActivity(MyScene2Activity.class, 200);
+            }
+        });
+
         eventManager.stop();
+
+        ConanConstants.ending_finished[3] = true;
 
         //事務所
         Drawable firm_background = KWResourceUtils.getDrawableByResourceId(this, R.drawable.firm);
