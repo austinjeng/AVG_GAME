@@ -403,7 +403,7 @@ public class MyScene1Activity extends KWBaseSceneActivity {
             KWFirstPersonEventModel event3 = new KWFirstPersonEventModel("我", "那個... 請問你有吃掉冰箱裡的披薩嗎?");
             KWThirdPersonEventModel event4 = new KWThirdPersonEventModel(gin_character, "我看起來很閒嗎");
             KWThirdPersonEventModel event5 = new KWThirdPersonEventModel(gin_character, "我可忙得, 沒事就閃邊去!");
-            KWFirstPersonEventModel event6 = new KWFirstPersonEventModel("這個人太可怕了吧! 貌似還帶著槍...)");
+            KWFirstPersonEventModel event6 = new KWFirstPersonEventModel("(這個人太可怕了吧! 貌似還帶著槍...)");
             KWFirstPersonEventModel event7 = new KWFirstPersonEventModel("(為了一個披薩賭上小命, 不值得啊!)");
             KWThirdPersonEventModel event8 = new KWThirdPersonEventModel(gin_character).setCharacterImageVisibility(false);
 
